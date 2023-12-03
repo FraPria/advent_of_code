@@ -4,7 +4,6 @@ import os
 import re
 from word2number import w2n
 
-os.chdir('/Users/francesca/Desktop/coding_shit/advent_of_code/2023/day_01/')
 with open('day_01_input.txt') as file:
     txt = [line.rstrip() for line in file]
 

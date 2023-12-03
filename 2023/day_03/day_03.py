@@ -7,7 +7,6 @@ from scipy import signal
 
 
 # %%
-os.chdir('/Users/francesca/Desktop/coding_shit/advent_of_code/2023/day_03/')
 # with open('day_03_test2.txt') as file:
 with open('day_03_input.txt') as file:
     txt = [line.rstrip() for line in file]
