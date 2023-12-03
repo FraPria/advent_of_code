@@ -7,7 +7,7 @@ import re
 import numpy as np
 
 # %% Create dataframe
-os.chdir('/Users/francesca/Desktop/coding_shit/advent_of_code/2023/')
+os.chdir('/Users/francesca/Desktop/coding_shit/advent_of_code/2023/day_02/')
 
 df = pd.DataFrame( columns = ['game', 'round', 'elements'])
 with open('day_02_input.txt') as file:
