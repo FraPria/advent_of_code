@@ -38,14 +38,14 @@ print('Result of Part 1 = ' + str(result1))
 # =====================================
 # %% Part 2
 
-copies = [1] * len(cards_match)
+copies = np.ones(len(cards_match)) #  'int' object is not iterable
 for c in range(len(cards_match)):
-    for i in range(cards_match[c]):
-        copies[c+i+1] += copies[c]
+    w = cards_match[c]
+    copies[(c+1):(c+1+w)] += copies[c] 
 print('Result of Part 2 = ' + str(sum(copies)))
 
 # # =====================================
-# # %% Part 2 (recursion trial)
+# # %% Part 2 (recursion test: spoiler, works for test but not full input. Heavy computation)
 # copies = np.zeros(len(cards_match))
 
 # def get_copies(v, copies, pos):
@@ -65,3 +65,5 @@ print('Result of Part 2 = ' + str(sum(copies)))
 # result2 = sum(copies)+len(copies)
 # print('Result of Part 2 = ' + str(result2))
 
+
+# %%
