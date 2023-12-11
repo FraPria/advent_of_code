@@ -30,7 +30,7 @@ n = (len(galaxy_coord)*(len(galaxy_coord)-1))/2
 print('Number of pairs = ' + str(n))
 
 # %%
-expansion = 10
+expansion = 1000000
 d = []
 for i in range(len(galaxy_coord[:,0])):
     for j in range(i+1, len(galaxy_coord[:,0])): 
