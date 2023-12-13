@@ -18,7 +18,7 @@ sym_mat = np.zeros((len(txt), len(txt[0])))
 
 for row in range(len(txt)):
     numbers = re.findall(r'\d+', txt[row]) 
-    # first I loop for the short numbars like 79, because if there is a bigger number containing 79 (such as 798 or 179), 
+    # first I loop for the short numbers like 79, because if there is a bigger number containing 79 (such as 798 or 179), 
     # the values in the matrix num_mat should be overwritten with the biggest number.
     numbers = sorted(numbers, key=lambda x: (len(x), x)) 
 
