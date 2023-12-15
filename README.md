@@ -17,3 +17,4 @@ My solutions to [Advent of code 2023](https://adventofcode.com/2023/) in python.
 | 11 |  ⭐ ⭐ | Manhattan distance. I took account of the universe expansion when computing the distance. In this way I did not filled up my computer's memory by expanding _a priori_ |
 | 12 |  | 💃 |
 | 13 | ⭐ ⭐ | - Made use of __np.flip()__ function to compare similarity between a matrix and a mirrored version of the same. <br> - Horizontal reflection is just vertical reflection of the transposed matrix, so I used the same function.
+| 14 | ⭐ | First part was ok, second part... I don't know much about cycle detection.
