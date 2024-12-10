@@ -11,6 +11,11 @@ My solutions to [Advent of code 2024](https://adventofcode.com/2024/) in python.
 | 03   | ⭐ ⭐ |  Regex findall() |
 | 04   | ⭐ ⭐ |  Searched for "XMAS" and "SAMX" in horizontal, vertical and diagonal. For diagonal I used np.diagonal(mat, offset=i) |
 | 05   | ⭐ ⭐ |  I used topological sorting in the second part. I made a Graph given the rules subsetted to the updates list (otherwise it was a cyclic graph and topological sort couldn't work) |
+| 06   | ⭐ | |
+| 07   | ⭐ | I had to build a binary tree recursion function that tries to divide or to subtract the right most number to the solution. This avoid to use a brute force solution of all possible combinations, since I check whether the right most number is a divisor of the solution, if it's not, I only need to use the subtraction, update the result and repeat. |
+| 08   | ⭐ ⭐ | I looped for each unique type of antenna and computed the distance between them. Just simple distance operators within numpy arrays |
+| 09   | ⭐ | |
+| 10 | ⭐ ⭐ | From day 07 I learn how to properly use a binary tree recursion and I was really happy to apply it again here! In the first part, when I reached the 9, I transformed into a 10 so that I would not count it again froma nother trail. Part 2 was just removing this condintion so that I could count all the trails. |
 
 
 ## 2023
