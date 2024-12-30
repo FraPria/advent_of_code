@@ -22,7 +22,7 @@ My solutions to [Advent of code 2024](https://adventofcode.com/2024/) in python.
 | 09   | ⭐ | |
 | 10 | ⭐ ⭐ | Thanks to day 07 I learned how to properly use a __binary tree recursion__ and I was really happy to apply it again here! In the first part, when I reached the 9, I transformed into a 10 so that I would not count it again froma nother trail. Part 2 was just removing this condition so that I could count all the trails. |
 | 11 |  ⭐ ⭐  | I also used recursion in here. I discovered this magic function decorator `@lru_cache(maxsize = None)` that sped up the computation. |
-| 12 |  ⭐  | Since there where different regions with the same values I used `scipy.ndimage import label` so that different clusters had different values. Then with `np.where(m==cell)` I selected only a single cluster and looping through the coordinates in the cluster, I computed the euclidian distance and if it was 1, then the two cells where sharing an edge. I finally computed the perimeter such as $4*nodes-shared\_ edges$. |
+| 12 |  ⭐  | Since there where different regions with the same values I used `scipy.ndimage import label` so that different clusters had different values. Then with `np.where(m==cell)` I selected only a single cluster and looping through the coordinates in the cluster, I computed the euclidian distance and if it was 1, then the two cells where sharing an edge. I finally computed the perimeter such as 4•nodes-shared_edges. |
 | 13 |  ⭐ ⭐  | This was just the solution of a simple linear system. I computed the formula by hand and plugged it in python. In the second part I just check if the equation give the prize coordinates a posterior, so that I don't have rounding errors. |
 | 14 |  ⭐ ⭐  | |
 | 15 |  💃  | |
