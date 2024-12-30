@@ -9,14 +9,28 @@ My solutions to [Advent of code 2024](https://adventofcode.com/2024/) in python.
 | 01   | ⭐ ⭐ |  value sorting and list comprehension |
 | 02   | ⭐ ⭐ |   |
 | 03   | ⭐ ⭐ |  Regex findall() |
-| 04   | ⭐ ⭐ |  Searched for "XMAS" and "SAMX" in horizontal, vertical and diagonal. For diagonal I used np.diagonal(mat, offset=i) |
-| 05   | ⭐ ⭐ |  I used topological sorting in the second part. I made a Graph given the rules subsetted to the updates list (otherwise it was a cyclic graph and topological sort couldn't work) |
+| 04   | ⭐ ⭐ |  Searched for "XMAS" and "SAMX" in horizontal, vertical and diagonal. For diagonal I used `np.diagonal(mat, offset=i)` |
+| 05   | ⭐ ⭐ |  I used __topological sorting__ in the second part. I made a Graph given the rules subsetted to the updates list (otherwise it was a cyclic graph and topological sort couldn't work) |
 | 06   | ⭐ | |
-| 07   | ⭐ | I had to build a binary tree recursion function that tries to divide or to subtract the right most number to the solution. This avoid to use a brute force solution of all possible combinations, since I check whether the right most number is a divisor of the solution, if it's not, I only need to use the subtraction, update the result and repeat. |
+| 07   | ⭐ | I had to build a __binary tree recursion__ function that tries to divide or to subtract the right most number to the solution. This avoid to use a brute force solution of all possible combinations, since I check whether the right most number is a divisor of the solution, if it's not, I only need to use the subtraction, update the result and repeat. |
 | 08   | ⭐ ⭐ | I looped for each unique type of antenna and computed the distance between them. Just simple distance operators within numpy arrays |
 | 09   | ⭐ | |
-| 10 | ⭐ ⭐ | From day 07 I learn how to properly use a binary tree recursion and I was really happy to apply it again here! In the first part, when I reached the 9, I transformed into a 10 so that I would not count it again froma nother trail. Part 2 was just removing this condintion so that I could count all the trails. |
-
+| 10 | ⭐ ⭐ | Thanks to day 07 I learned how to properly use a __binary tree recursion__ and I was really happy to apply it again here! In the first part, when I reached the 9, I transformed into a 10 so that I would not count it again froma nother trail. Part 2 was just removing this condition so that I could count all the trails. |
+| 11 |  ⭐ ⭐  | I also used recursion in here. I discovered this magic function decorator `@lru_cache(maxsize = None)` that sped up the computation. |
+| 12 |  ⭐  | Since there where different regions with the same values I used `scipy.ndimage import label` so that different clusters had different values. Then with `np.where(m==cell)` I selected only a single cluster and looping through the coordinates in the cluster, I computed the euclidian distance and if it was 1, then the two cells where sharing an edge. I finally computed the perimeter such as $4*nodes-shared\_edges$. |
+| 13 |  ⭐ ⭐  | This was just the solution of a simple linear system. I computed the formula by hand and plugged it in python. In the second part I just check if the equation give the prize coordinates a posterior, so that I don't have rounding errors. |
+| 14 |  ⭐ ⭐  | |
+| 15 |  💃  | |
+| 16 |  💃 | |
+| 17 |  💃  | |
+| 18 |  ⭐ ⭐  | |
+| 19 |  ⭐ ⭐  | |
+| 20 |  ⭐ ⭐  | First I search the path using the same code used in day 18 (BFS algorithm). Then for first part I computed __Manhattan distance__ between each point in path, and kept only those with distance=2. Then I filtered out when the gain in steps was>=100. Same for part 2 but I kept points with Manhattan distance <=20  |
+| 21 | 💃 | |
+| 22 | 💃 | |
+| 23 |  ⭐ ⭐  | Super useful the `nx.find_cliques` function to find fully connected subgraph. |
+| 24 |  ⭐  | |
+| 25 | 💃 | |
 
 ## 2023
 My solutions to [Advent of code 2023](https://adventofcode.com/2023/) in python.
