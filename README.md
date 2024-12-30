@@ -1,5 +1,10 @@
 # Advent of code
 
+This repository contains my personal solutions to the **Advent of Code** challenges across various years.  
+I use this repository as a collection of notes, primarily for my reference, and to document algorithmic cases that may prove useful in the future.  
+
+Feel free to browse or use the solutions as inspiration, but note that this is intended to serve as a personal resource rather than a polished or optimized codebase.  
+
 
 # 2024
 My solutions to [Advent of code 2024](https://adventofcode.com/2024/) in python.
